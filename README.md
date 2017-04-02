@@ -26,13 +26,13 @@ This request will crawl twitter and search for tweets containing hashtag "TUDelf
 		  "hashtags_list": ["TUDelft"],
 		  "tweet_text": "Sold out on campus! Please join Professor Pieter Jan Stappers in #TUDelft",
 		  "user_name": "delftxdesign"
-        },
-        {
+		},
+		{
 		  "created_at": "Sun Apr 02 04:33:11 +0000 2017",
 		  "hashtags_list": ["RobotWise", "RoboBusiness"],
-		  "tweet_text": "Visit #RobotWise @TUSExpo 19-21April #RoboBusiness
+		  "tweet_text": "Visit #RobotWise @TUSExpo 19-21April #RoboBusiness",
 		  "user_name": "Niels_W"
-	    },
+		}
 	  ]
 	}
 
@@ -44,18 +44,18 @@ This request will crawl Flickr and search for posts containing tag "TUDelft" and
 
 	{
 	  "results": [
-	  	{
-		    "title": "Save for work shoes",
-	  	  "url": "https://farm3.staticflickr.com/2949/33400403062_324e1ca7e3_o.jpg"
-		  },
-	  	{
-		    "title": "Lanternim",
-		    "url": "https://farm3.staticflickr.com/2671/33113823605_bec45d1a38_o.jpg"
-		  },
-	  	{
-		    "title": "Arquitetura",
-		    "url": "https://farm4.staticflickr.com/3698/33113820415_0e929e63ce_o.jpg"
-	  	}
+		{
+		  "title": "Save for work shoes",
+		  "url": "https://farm3.staticflickr.com/2949/33400403062_324e1ca7e3_o.jpg"
+		},
+		{
+		  "title": "Lanternim",
+		  "url": "https://farm3.staticflickr.com/2671/33113823605_bec45d1a38_o.jpg"
+		},
+		{
+		  "title": "Arquitetura",
+		  "url": "https://farm4.staticflickr.com/3698/33113820415_0e929e63ce_o.jpg"
+		}
 	  ]
 	}
 
@@ -67,14 +67,14 @@ This request will crawl Imgur and search for images in the given album, in the f
 
 	{
 	  "results": [
-		  {
-	  	  "url": "http://i.imgur.com/FlLO0xt.jpg"
-	  	},
-	  	{
-	  	  "url": "http://i.imgur.com/2qpgba7.jpg"
-		  },
-	  	{
-		    "url": "http://i.imgur.com/5N63bTx.jpg"
-	  	}
+		{
+		  "url": "http://i.imgur.com/FlLO0xt.jpg"
+		},
+		{
+		  "url": "http://i.imgur.com/2qpgba7.jpg"
+		},
+		{
+		  "url": "http://i.imgur.com/5N63bTx.jpg"
+		}
 	  ]
 	}
