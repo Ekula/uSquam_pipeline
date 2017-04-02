@@ -17,7 +17,7 @@ Running app.py initializes a Flask application on port 9000, which responds to c
 
 Example GET request: `localhost:9000/requesters/crawlTwitter?hashtag=TUDelft&number=2`
 
-This request will crawl twitter and search for tweets containing hashtag "TUDelft" and return 2 tweets, in the following json format:
+This request will crawl twitter, search for tweets containing hashtag "TUDelft" and return 2 tweets in the following json format:
 
 	{
 	  "results": [
@@ -40,7 +40,7 @@ This request will crawl twitter and search for tweets containing hashtag "TUDelf
 
 Example GET request: `localhost:9000/requesters/crawlFlickr?tag=TUDelft&number=3`
 
-This request will crawl Flickr and search for posts containing tag "TUDelft" and return 3 posts, in the following json format:
+This request will crawl Flickr, search for posts containing tag "TUDelft" and return 3 posts in the following json format:
 
 	{
 	  "results": [
@@ -63,7 +63,7 @@ This request will crawl Flickr and search for posts containing tag "TUDelft" and
 
 Example GET request: `localhost:9000/requesters/crawlImgur?album=0f3pD`
 
-This request will crawl Imgur and search for images in the given album (http://imgur.com/a/0f3pD), in the following json format:
+This request will crawl Imgur, search for all images contained in the given album (http://imgur.com/a/0f3pD) and return links to those images in the following json format:
 
 	{
 	  "results": [
