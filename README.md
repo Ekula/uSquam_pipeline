@@ -21,18 +21,18 @@ This request will crawl twitter and search for tweets containing hashtag "TUDelf
 
 	{
 	  "results": [
-		  {
-		    "created_at": "Sun Apr 02 15:00:00 +0000 2017",
-		    "hashtags_list": ["TUDelft"],
-		    "tweet_text": "Sold out on campus! Please join Professor Pieter Jan Stappers in #TUDelft",
-		    "user_name": "delftxdesign"
-		  },
-		  {
-		    "created_at": "Sun Apr 02 04:33:11 +0000 2017",
-		    "hashtags_list": ["RobotWise", "RoboBusiness"],
-		    "tweet_text": "Visit #RobotWise @TUSExpo 19-21April #RoboBusiness
-		    "user_name": "Niels_W"
-		  },
+		{
+		  "created_at": "Sun Apr 02 15:00:00 +0000 2017",
+		  "hashtags_list": ["TUDelft"],
+		  "tweet_text": "Sold out on campus! Please join Professor Pieter Jan Stappers in #TUDelft",
+		  "user_name": "delftxdesign"
+        },
+        {
+		  "created_at": "Sun Apr 02 04:33:11 +0000 2017",
+		  "hashtags_list": ["RobotWise", "RoboBusiness"],
+		  "tweet_text": "Visit #RobotWise @TUSExpo 19-21April #RoboBusiness
+		  "user_name": "Niels_W"
+	    },
 	  ]
 	}
 
