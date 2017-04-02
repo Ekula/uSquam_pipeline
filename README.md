@@ -15,9 +15,11 @@ Running app.py initializes a Flask application on port 9000, which responds to c
 
 ## Twitter
 
+We use the free version of Twitter API and therefore multiple requests need to be made to crawl a large number of Tweets. 1 request corresponds to 100 Tweets.
+
 Example GET request: `localhost:9000/requesters/crawlTwitter?hashtag=TUDelft&number=2`
 
-This request will crawl twitter, search for tweets containing hashtag "TUDelft" and return 2 tweets in the following json format:
+This request will crawl twitter, search for tweets containing hashtag "TUDelft" and return 2 Tweets in the following json format:
 
 	{
 	  "results": [
@@ -37,6 +39,8 @@ This request will crawl twitter, search for tweets containing hashtag "TUDelft" 
 	}
 
 ## Flickr
+
+We use the free version of Flickr API and therefore multiple requests need to be made to crawl a large number of posts. 1 request corresponds to 500 Flickr posts.
 
 Example GET request: `localhost:9000/requesters/crawlFlickr?tag=TUDelft&number=3`
 
