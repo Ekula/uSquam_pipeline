@@ -63,7 +63,7 @@ This request will crawl Flickr and search for posts containing tag "TUDelft" and
 
 Example GET request: `localhost:9000/requesters/crawlImgur?album=0f3pD`
 
-This request will crawl Imgur and search for images in the given album, in the following json format:
+This request will crawl Imgur and search for images in the given album (http://imgur.com/a/0f3pD), in the following json format:
 
 	{
 	  "results": [
