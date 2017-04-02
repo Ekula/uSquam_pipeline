@@ -7,7 +7,7 @@ Follow : https://www.elastic.co/guide/en/elasticsearch/reference/current/_instal
 
 ## Synopsis
 
-Running app.py initializes a Flask application on port 9000, which responds to certain GET requests. We support 3 platforms:
+Running app.py initializes a Flask application on port 9000, which responds to certain GET requests. We support the 3 following platforms:
 
 1. Twitter
 2. Flickr
