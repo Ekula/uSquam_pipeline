@@ -6,6 +6,7 @@ import tweepy
 import json
 from flask_restful import Resource
 from flask import request, jsonify
+from filter_elastic import filter_elastic
 
 
 # Get request to:
@@ -14,6 +15,7 @@ from flask import request, jsonify
 class TwitterCrawler(Resource):
     def get(self):
         hashtag = '#' + request.args.get('hashtag')
+        ignored_hashtag = str(request.args.get('ignored_hashtag'))
         number = request.args.get('number')
 
         if hashtag is not None and number is not None and number.isdigit():
@@ -71,6 +73,7 @@ class TwitterCrawler(Resource):
 
         # If list is not empty
         if crawled_tweets_list:
+            crawled_tweets_list = filter_elastic(crawled_tweets_list, ignored_hashtag)
             return jsonify(results=crawled_tweets_list)
         else:
             return None, 404
