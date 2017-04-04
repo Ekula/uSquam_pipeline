@@ -40,7 +40,10 @@ class TwitterCrawler(Resource):
         api = tweepy.API(auth)
 
         # search_results = api.search(q=hashtag, count=number)
-        search_results = [status for status in tweepy.Cursor(api.search, q=hashtag).items(number)]
+        if number == 0:
+            search_results = []
+        else:
+            search_results = [status for status in tweepy.Cursor(api.search, q=hashtag).items(number)]
 
         for tweet in search_results:
             tweet_json = tweet._json

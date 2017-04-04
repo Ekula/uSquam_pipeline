@@ -18,7 +18,7 @@ class FlickrCrawler(Resource):
             number = int(number)
         else:
             # Error
-            return 'Wrong input parameters, try ?tag=tudelft&number=50', 404
+            return 'Wrong inpjkut parameters, try ?tag=tudelft&number=50', 404
 
         print 'GET request:  Requested ' + str(number) + ' flickr photos with tag: ' + str(tag) + '.'
 
