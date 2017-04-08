@@ -1,0 +1,6 @@
+tweepy
+elasticsearch
+Flask==0.12
+flask_restful
+requests
+mongoengine
