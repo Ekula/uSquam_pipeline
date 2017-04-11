@@ -86,7 +86,9 @@ Step 1:
 Getting started 
 
 Download `Elastic Search` and install it.
+
 Follow : `https://www.elastic.co/guide/en/elasticsearch/reference/current/_installation.html`
+
 
 Step 2: 
 Elastic Search on Python
@@ -112,13 +114,16 @@ If you request `http://localhost:9200/`, you will get the following output (Note
 
 In the Check folder, `first_check.py` ensures that the above details are obtained as an output in the Python console.
 
+
 Step 3: 
 Creating nodes and testing using Postman
 
 Please install `Postman` for API Testing and development.
 
 Request: `GET http://localhost:9200/_cat/indices?v`
-If there are no indices you will see: `health status index uuid pri rep docs.count docs.deleted store.size pri.store.size`
+If there are no indices you will see: 
+
+	health status index uuid pri rep docs.count docs.deleted store.size pri.store.size
 
 Run `second_check.py` from the Check folder. This will create a new index named "posts" with 3 documents.
 The first document with id = 1 will be printed on the Python console.
@@ -129,12 +134,14 @@ You will see that a new index is created called "posts" with docs.count=3.
 	health status index uuid                   pri rep docs.count docs.deleted store.size pri.store.size
 	yellow open   posts 82B3zRjjScOyzFh3MpeErQ   5   1          3            0     18.3kb         18.3kb
 
+
 Step 4: 
 Querying using Elastic Search
 
 Run `search_query.py` from the Query folder.
 The code will print all the authors who are not "Santa Clause".
 This part will ensure that the querying functionality of Elastic Search works.
+
 
 Step 5: 
 Merging the Twitter pipeline with Elastic Search
@@ -174,7 +181,7 @@ You will obtain three tweets with hashtag TUDelft in the JSON format. The number
 		"TUDelft",
 		"VUAmsterdam"
 	      ],
-	      "tweet_text": "'This summer the #cheetah will meet it's rival': de #Velox7, gebouwd door studenten van #TUDelft en 	#VUAmsterdam… https://t.co/XcXl7AraUe",
+	      "tweet_text": "'This summer the #cheetah will meet it's rival': de #Velox7, gebouwd door studenten van #TUDelft en #VUAmsterdam… https://t.co/XcXl7AraUe",
 	      "user_name": "tudelft"
 	    }
 	  ]
@@ -200,7 +207,8 @@ You will obtain the tweets with hashtag TUDelft but without hashtags openscience
 	    }
 	  ]
 	}
-	
+
+
 Step 6: 
 Checking the functionality of the pipeline combined with the Frontend:
 
