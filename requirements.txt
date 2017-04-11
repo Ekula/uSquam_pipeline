@@ -1,6 +1,12 @@
+Install via pip (Python):
+
 tweepy
 elasticsearch
 Flask==0.12
 flask_restful
 requests
 mongoengine
+json
+
+Tools:
+Postman - For API testing.
