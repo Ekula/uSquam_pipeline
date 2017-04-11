@@ -82,12 +82,14 @@ This request will crawl Imgur, search for all images contained in the given albu
 
 ## Elastic Search
 
-Step 1: Getting started 
+Step 1: 
+Getting started 
 
 Download `Elastic Search` and install it.
 Follow : `https://www.elastic.co/guide/en/elasticsearch/reference/current/_installation.html`
 
-Step 2: Elastic Search on Python
+Step 2: 
+Elastic Search on Python
 
 Use Command Prompt to start Elastic Search. Go to the location of the folder and run `elasticsearch.bat`.
 
@@ -110,7 +112,8 @@ If you request `http://localhost:9200/`, you will get the following output (Note
 
 In the Check folder, `first_check.py` ensures that the above details are obtained as an output in the Python console.
 
-Step 3: Creating nodes and testing using Postman
+Step 3: 
+Creating nodes and testing using Postman
 
 Please install `Postman` for API Testing and development.
 
@@ -126,13 +129,15 @@ You will see that a new index is created called "posts" with docs.count=3.
 	health status index uuid                   pri rep docs.count docs.deleted store.size pri.store.size
 	yellow open   posts 82B3zRjjScOyzFh3MpeErQ   5   1          3            0     18.3kb         18.3kb
 
-Step 4: Querying using Elastic Search
+Step 4: 
+Querying using Elastic Search
 
 Run `search_query.py` from the Query folder.
 The code will print all the authors who are not "Santa Clause".
 This part will ensure that the querying functionality of Elastic Search works.
 
-Step 5: Merging the Twitter pipeline with Elastic Search
+Step 5: 
+Merging the Twitter pipeline with Elastic Search
 
 Run `app.py`
 You will see this in the Python console: 
@@ -149,7 +154,7 @@ You will obtain three tweets with hashtag TUDelft in the JSON format. The number
 	      "hashtags_list": [
 		"tudelft"
 	      ],
-	      "tweet_text": "Kijktip vanavond 20.30 @UniversiteitNL #tudelft prof Gerard van Bussel over Hoe leven we in de toekomst van 				de wind… https://t.co/HrBCuZWiuT",
+	      "tweet_text": "Kijktip vanavond 20.30 @UniversiteitNL #tudelft prof Gerard van Bussel over Hoe leven we in de toekomst van de wind… https://t.co/HrBCuZWiuT",
 	      "user_name": "Sharita_B"
 	    },
 	    {
@@ -158,7 +163,7 @@ You will obtain three tweets with hashtag TUDelft in the JSON format. The number
 		"openscience",
 		"TUDelft"
 	      ],
-	      "tweet_text": "Open Science: The National Plan and you. Save the Date: May 29 \n  # NPOS17 #openscience #TUDelft \n 					https://t.co/2xOyVy8bMv",
+	      "tweet_text": "Open Science: The National Plan and you. Save the Date: May 29 \n  # NPOS17 #openscience #TUDelft \n https://t.co/2xOyVy8bMv",
 	      "user_name": "egonwillighagen"
 	    },
 	    {
@@ -169,7 +174,7 @@ You will obtain three tweets with hashtag TUDelft in the JSON format. The number
 		"TUDelft",
 		"VUAmsterdam"
 	      ],
-	      "tweet_text": "'This summer the #cheetah will meet it's rival': de #Velox7, gebouwd door studenten van #TUDelft en 					#VUAmsterdam… https://t.co/XcXl7AraUe",
+	      "tweet_text": "'This summer the #cheetah will meet it's rival': de #Velox7, gebouwd door studenten van #TUDelft en 	#VUAmsterdam… https://t.co/XcXl7AraUe",
 	      "user_name": "tudelft"
 	    }
 	  ]
@@ -190,13 +195,14 @@ You will obtain the tweets with hashtag TUDelft but without hashtags openscience
 		"TUDelft",
 		"VUAmsterdam"
 	      ],
-	      "tweet_text": "'This summer the #cheetah will meet it's rival': de #Velox7, gebouwd door studenten van #TUDelft en 					#VUAmsterdam… https://t.co/XcXl7AraUe",
+	      "tweet_text": "'This summer the #cheetah will meet it's rival': de #Velox7, gebouwd door studenten van #TUDelft en 	#VUAmsterdam… https://t.co/XcXl7AraUe",
 	      "user_name": "tudelft"
 	    }
 	  ]
 	}
 	
-Step 6: Checking the functionality of the Pipeline combined with the Frontend:
+Step 6: 
+Checking the functionality of the pipeline combined with the Frontend:
 
 1. Go to: http://usquam.nl/data
 2. Click: Add Data Collection.
