@@ -1,9 +1,5 @@
-uSquam Pipeline:
+## uSquam Pipeline:
 Task pipelining part of our crowdsourcing platform
-
-Elastic Search
-Getting started - Download Elastic Search and install it.
-Follow : https://www.elastic.co/guide/en/elasticsearch/reference/current/_installation.html
 
 ## Synopsis
 
@@ -82,3 +78,26 @@ This request will crawl Imgur, search for all images contained in the given albu
 		}
 	  ]
 	}
+
+## Elastic Search
+
+Elastic Search
+Getting started - Download Elastic Search and install it.
+Follow : `https://www.elastic.co/guide/en/elasticsearch/reference/current/_installation.html`
+
+Elastic Search runs on port 9200. If you request `http://localhost:9200/`, you will get the following output (names would depend on the system):
+
+	{
+	  "name" : "z1QNFxg",
+	  "cluster_name" : "elasticsearch",
+	  "cluster_uuid" : "a0NRUbsnRkmeDztsXJ477Q",
+	  "version" : {
+	    "number" : "5.2.2",
+	    "build_hash" : "f9d9b74",
+	    "build_date" : "2017-02-24T17:26:45.835Z",
+	    "build_snapshot" : false,
+	    "lucene_version" : "6.4.1"
+	  },
+	  "tagline" : "You Know, for Search"
+	}
+	
