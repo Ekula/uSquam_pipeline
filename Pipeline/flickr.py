@@ -30,7 +30,7 @@ class FlickrCrawler(Resource):
                 'format': 'json',
                 'nojsoncallback': '?',
                 'method': 'flickr.photos.search',
-                'extras': 'url_o',
+                'extras': 'url_l',
                 'tags': tag,
                 'per_page': 500,
                 'page': page
@@ -42,9 +42,9 @@ class FlickrCrawler(Resource):
             pages = flickr_json['photos']['pages']
 
             for photo in flickr_json['photos']['photo']:
-                if 'url_o' in photo:
+                if 'url_l' in photo:
                     # Reformat json to contain less properties
-                    crawled_flickr = {'title': photo['title'], 'url': photo['url_o']}
+                    crawled_flickr = {'title': photo['title'], 'url': photo['url_l']}
                     crawled_flickr_list.append(crawled_flickr)
 
             # If list is not empty
